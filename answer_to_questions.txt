@@ -1,0 +1,35 @@
+a. What are the advantages and disadvantages of using graph databases and which are the best and worse scenarios for it?
+Advantages:
+-Easy to add, modify, and delete data without altering the entire database schema
+-Efficient querying and data analysis
+-Highly scalable
+
+Disadvantages:
+-Graph databases lack a standard querying language, making it difficult to port applications between different graph databases
+-Can be more complex to set up and manage than traditional relational databases
+
+Best-case:
+-Social networks and recommendation engines
+-Fraud detection
+
+Worst-case:
+-If your data can be represented in a simple tabular format with few relationships between data points
+-If your application involves many frequent updates and transactions
+-Less suitable for small or budget-constrained projects
+
+
+
+b. How would you code in SQL the Cypher statements you developed for your graphalgorithms-based query, 
+	if the same data was stored in a relational database?
+-I would propably have to use a lot of join statements.
+
+
+c. How does the DBMS you work with organizes the data storage and the execution of the queries?
+-Data is stored as nodes and edges with additional properties and labels. Neo4j uses a number of optimization techniques to improve 
+query performance, including index-based lookups, caching, and lazy loading of data.
+
+
+d. Which methods for scaling and clustering of databases you are familiar with so far?
+-Familier with Vertical scaling, adding more CPU, RAM, storage to a database server. Replication of database, multiple
+copies of a database for load balancing. Clustering, multiple servers to act as a single database.
+
